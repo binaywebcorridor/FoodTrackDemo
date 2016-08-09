@@ -47,6 +47,9 @@ class ViewController: UIViewController , UITextFieldDelegate{
         mealNameLabel.text = textField.text
     }
     
+    func textFieldDidBeginEditing(textField: UITextField) {
+        mealNameLabel.text = "Enter Your Meal"
+    }
     
     
     
