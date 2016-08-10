@@ -59,6 +59,7 @@
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="zzA-Cx-4p9">
                             <connections>
                                 <action selector="cancel:" destination="BYZ-38-t0r" id="cye-f9-XFM"/>
+                                <segue destination="lLX-PZ-ZVo" kind="unwind" unwindAction="unwindToMealList:" id="ST7-S2-VYl"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="AGL-xo-SE9">
@@ -82,7 +83,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="3284" y="450"/>
+            <point key="canvasLocation" x="2399" y="450"/>
         </scene>
         <!--Your Meals-->
         <scene sceneID="YLE-mV-yfi">
@@ -132,6 +133,7 @@
                                     <outlet property="nameLabel" destination="MRz-Gc-DMY" id="Lqw-X7-xss"/>
                                     <outlet property="photoImageView" destination="o3Z-H6-zmM" id="snu-3T-cvn"/>
                                     <outlet property="ratingControl" destination="VPs-aE-Yei" id="dHf-wY-aTA"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="ShowDetail" id="W0j-y6-I9e"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -186,10 +188,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yU7-yL-N84" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2472" y="450"/>
+            <point key="canvasLocation" x="3202" y="1208"/>
         </scene>
     </scenes>
     <resources>
         <image name="defaultPhoto" width="540" height="540"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="W0j-y6-I9e"/>
+    </inferredMetricsTieBreakers>
 </document>
